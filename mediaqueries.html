@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*El color para móvil va a ser aquamarine */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-image: url("images/taller-detalle.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        header h1 {
+            color: orange;
+            text-shadow: 3px 3px 3px black ;
+        }
+
+        nav {
+            background-color: blue;
+            color: white;
+            
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            font-size: 2em;
+
+        }
+
+        nav a:hover {
+            background-color: aqua ;
+            color: brown;
+            font-weight: bold;
+        }
+
+        #contenedor-quienes-somos p {
+            
+            font-size: 3em;
+        }
+
+
+
+        
+
+        /* 2. Para dispositivos de MAS de 768px el color de fondo es rosa claro */
+
+        @media (min-width: 768px) {
+            body {
+            background-color: lightpink;
+            }
+            header  {
+                background-image: url("images/taller.jpeg");
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            nav a {
+                display: inline;
+                border-bottom: none;
+            }
+
+            #contenedor-quienes-somos {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #contenedor-quienes-somos img {
+                width: 45%;
+            }
+
+            #contenedor-quienes-somos p {
+                width: 45%;
+            }
+        }
+
+        /* 3. Para dispositivos de MAS de 1000px el color de fondo es amarillo */
+
+         @media (min-width: 1000px) {
+            body {
+            background-color: yellow;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Talleres Bosco</h1>
+    </header>
+    <nav>
+        <a href="#quienes">Quienes somos</a>
+        <a href="#donde-estamos">Dónde estamos</a>
+        <a href="#nuestros-clientes">Nuestros clientes</a>
+    </nav>
+
+    <section id="quienes-somos">
+        <h1 class="titulo">
+            Quienes Somos
+        </h1>
+        <div id="contenedor-quienes-somos">
+            <img src="images/grupo-personas-trabajando-taller-carpinteria_116407-4651.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illo modi praesentium perspiciatis eaque pariatur accusantium ipsum tenetur consequatur cum sint velit accusamus, obcaecati atque maxime? Incidunt architecto a repudiandae!
+            </p>
+
+        </div>
+
+    </section>
+    <h1>Media Queries</h1>
+    
+</body>
+</html>
