@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <script src="https://kit.fontawesome.com/058ec4227c.js" crossorigin="anonymous"></script>
     <style>
         /*El color para móvil va a ser aquamarine */
 
@@ -59,6 +61,32 @@
             font-size: 3em;
         }
 
+        #nuestros-servicios {
+            background-color: white;
+        }
+        
+        .servicio {
+            color: blue;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 4em;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .servicio:hover {
+            opacity: 0.5;
+        }
+
+        .titulo {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
+            text-shadow: 2px 2px 2px  blue;
+        }
 
 
         
@@ -66,6 +94,17 @@
         /* 2. Para dispositivos de MAS de 768px el color de fondo es rosa claro */
 
         @media (min-width: 768px) {
+
+            #contenedor-nuestros-servicios {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .servivio {
+                width: 45%;
+            }
+
             body {
             background-color: lightpink;
             }
@@ -103,6 +142,11 @@
             body {
             background-color: yellow;
             }
+
+            .servicio {
+                width: 30%;
+                font-size: 3em;
+            }
         }
         
     </style>
@@ -130,6 +174,55 @@
         </div>
 
     </section>
+    <section id="nuestros-servicios">
+        <h1 class="titulo">
+            Nuestros servicios
+        </h1>
+
+            <div id="contenedor-nuestros-servicios">
+        
+
+            <div class="servicio">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <p>Servicio técnico</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fa-solid fa-phone"></i>
+                <p>Atención telefónica</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fa-solid fa-truck"></i>
+                <p>Servicio a domicilio</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fa-solid fa-car"></i>
+                <p>Vehículo de sustitución</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Información</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <p>Servicio técnico</p>
+            </div>
+
+           
+
+            </div>
+
+        
+
+        
+
+    </section>
+
+    
     <h1>Media Queries</h1>
     
 </body>
